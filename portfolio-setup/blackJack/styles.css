@@ -1,0 +1,117 @@
+body{
+ margin: 0;
+ padding: 0;
+box-sizing: border-box;
+
+}
+.hero{
+  background-color: rgb(103, 153, 103);
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.pc-section{
+ background-color: rgb(206, 50, 50);
+
+ width: 90vw;
+ height: 40vh;
+ margin: 0 auto;
+}
+.pc-section p{
+  padding-left: 0.5rem;
+  margin: 0;
+}
+.player-section{
+ background-color:rgb(57, 109, 144);
+ width: 90vw;
+ height: 40vh;
+ margin: 0 auto;
+ 
+}
+.player-section p{
+  margin: 0;
+  padding-left: 0.5rem;
+}
+.player-slot{
+ display: grid;
+ grid-template-columns: repeat(10,1fr);
+}
+.pc-slot{
+ display: grid;
+ grid-template-columns: repeat(10,1fr);
+}
+.result-info{
+ display: flex;
+ align-items: baseline;
+ padding-left: 0.5rem;
+}
+/* unfliped carddddd */
+.unfliped-card{
+ 
+ border: 2px solid black;
+ width: 8rem;
+ height: 12rem;
+ background-color: rgb(195, 190, 190);
+ display: grid;
+ place-items: center;
+ margin: 1rem;
+ border-radius: 0.5rem;
+}
+/* btns general styles */
+.button{
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+}
+/* player section */
+.player-section{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.pc-section{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+/* result info */
+.result-info{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+/* card styleeeees */
+.player-card{
+ background-color: rgba(255, 255, 255, 0.945);
+ border-radius: 0.5rem;
+ font-size: 3rem;
+ width: 8rem;
+ height:12rem;
+ border: 2px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+ position: relative;
+ margin: 1rem;
+}
+.player-card.red{
+ color: red;
+}
+.player-card.black{
+ color: black;
+}
+
+.player-card::before,.player-card::after{
+ position:absolute;
+ content: attr(data-value);
+ font-size: 1rem;
+
+}
+.player-card::before{
+ top:.5rem;
+ left:.5rem;
+}
+.player-card::after{
+ bottom:.5rem;
+ right:.5rem;
+ transform: rotate(180deg);
+}
