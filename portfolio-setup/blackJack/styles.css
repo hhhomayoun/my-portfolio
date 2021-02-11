@@ -10,6 +10,7 @@ height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
+
 }
 .pc-section{
  background-color: rgb(206, 50, 50);
@@ -17,6 +18,7 @@ align-items: center;
  width: 90vw;
  height: 40vh;
  margin: 0 auto;
+ z-index: -1;
 }
 .pc-section p{
   padding-left: 0.5rem;
@@ -27,20 +29,39 @@ align-items: center;
  width: 90vw;
  height: 40vh;
  margin: 0 auto;
- 
+
 }
 .player-section p{
   margin: 0;
   padding-left: 0.5rem;
 }
 .player-slot{
- display: grid;
- grid-template-columns: repeat(10,1fr);
+ /* display: grid;
+ grid-template-columns: repeat(10,1fr); */
+ display: flex;
+ max-width: 100%;
+ 
 }
+
 .pc-slot{
- display: grid;
- grid-template-columns: repeat(10,1fr);
+ /* display: grid;
+ grid-template-columns: repeat(10,1fr); */
+ display: flex;
+ max-width: 100%;
+ 
 }
+.card-container{
+/* flex: 1 0 0; */
+ flex-shrink: 1;
+overflow: hidden;
+
+}
+.card-container:last-child{
+  flex: 0 0 auto;
+  
+}
+
+
 .result-info{
  display: flex;
  align-items: baseline;
@@ -55,7 +76,7 @@ align-items: center;
  background-color: rgb(195, 190, 190);
  display: grid;
  place-items: center;
- margin: 1rem;
+ margin-top: 0.75rem;
  border-radius: 0.5rem;
 }
 /* btns general styles */
@@ -91,7 +112,13 @@ display: flex;
 justify-content: center;
 align-items: center;
  position: relative;
- margin: 1rem;
+ margin-top: 1rem;
+  
+}
+@media screen and (min-width:760px){
+  .player-card{
+    margin: 0.75rem;
+  }
 }
 .player-card.red{
  color: red;
@@ -114,4 +141,33 @@ align-items: center;
  bottom:.5rem;
  right:.5rem;
  transform: rotate(180deg);
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+.hero{
+  height: 100vh;
+  
+}
+
+.player-card{
+  height: 120px;
+  width: 80px;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+.unfliped-card{
+   height: 120px;
+  width: 80px;
+   margin-top: 0.5rem;
+}
+.result-info{
+  display: block;
+}
+.button{
+  font-size: 1rem;
+}
+}
+.player-control{
+  margin-left: 1rem;
 }

@@ -301,6 +301,20 @@ Hero
 ===============
 */
 /* underline added to globals */
+.hero-icons{
+  display: grid;
+  grid-template-columns: 50px 50px;
+  
+}
+.hero-icons .fab{
+  color: black;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.fab:hover{
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
 .hero .underline{
   margin-bottom: 0.5rem;
   margin-left: 0;
@@ -524,12 +538,23 @@ Skills
 }
 .skills-names{
   display: grid;
+  grid-template-columns: 1fr;
+   column-gap: 4rem;
+   row-gap: 1rem;
+  justify-self: center;
+  
+
+}
+@media screen and (min-width:760px){
+  .skills-names{
+  display: grid;
   grid-template-columns: 1fr 1fr;
    column-gap: 4rem;
    row-gap: 1rem;
   justify-self: center;
   
 
+}
 }
 .skill-name{
   display: flex;
