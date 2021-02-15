@@ -548,7 +548,7 @@ Skills
 @media screen and (min-width:760px){
   .skills-names{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
    column-gap: 4rem;
    row-gap: 1rem;
   justify-self: center;
@@ -558,15 +558,16 @@ Skills
 }
 .skill-name{
   display: flex;
-  font-size: 2rem;
+  font-size: 1rem;
   align-items: baseline;
   
  
 }
+
 .skill-name p{
   margin-left: 1rem;
   color: black;
-
+font-size: 2rem;
 }
 .skill-name i{
   color: var(--clr-primary-3);

@@ -1,7 +1,7 @@
 const navToggle = document.querySelector('.nav-toggle');
 const linksContainer = document.querySelector('.links-container');
 const links = document.querySelector('.links');
-
+const date = document.querySelector("#date");
 navToggle.addEventListener('click', () => {
   const linksContainerHeigth = linksContainer.getBoundingClientRect().height;
   const linksHeigth = links.getBoundingClientRect().height;
@@ -61,3 +61,4 @@ scrollLinks.forEach((link) => {
   })
 })
 
+date.innerHTML = new Date().getFullYear()
