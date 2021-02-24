@@ -307,7 +307,7 @@ Hero
   
 }
 .hero-icons .fab{
-  color: black;
+  color:var(--clr-grey-2);
   font-size: 30px;
   margin-top: 20px;
 }

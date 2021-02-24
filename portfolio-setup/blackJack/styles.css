@@ -172,35 +172,4 @@ only screen and (min-device-pixel-ratio : 1.5) {
   margin-left: 1rem;
 }
 
-@media only screen 
-    and (device-width: 414px) 
-    and (device-height: 896px) 
-    and (-webkit-device-pixel-ratio: 2) { 
-      .hero{
-  height: 100vh;
-  
-}
-.pc-section{
-  height: 30vh;
-}
-.player-section{
-  height: 30vh;
-}
-.player-card{
-  height: 120px;
-  width: 80px;
-  font-size: 2rem;
-  margin-top: 0.5rem;
-}
-.unfliped-card{
-   height: 120px;
-  width: 80px;
-   margin-top: 0.5rem;
-}
-.result-info{
-  display: block;
-}
-.button{
-  font-size: 1rem;
-}
-    }
+
